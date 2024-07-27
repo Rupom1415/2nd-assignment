@@ -412,6 +412,13 @@ body {
     color: rgba(255, 255, 255, 0.50);
 }
 
+.copy-right {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 3.6rem;
+}
+
 
 @media screen and (max-width:576px) {
     body {
