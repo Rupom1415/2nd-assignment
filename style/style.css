@@ -42,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 8.8rem;
 }
 
 .btn-primary {
@@ -188,7 +188,7 @@ body {
     flex-direction: row;
     margin-left: 18rem;
     margin-right: 18rem;
-    margin-top: 5rem;
+    margin-top: 8.8rem;
     gap: 5rem;
 }
 
@@ -215,7 +215,7 @@ body {
 
 .extra-mile-container {
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 8.8rem;
     margin-left: 28rem;
     margin-right: 28rem;
     justify-content: space-between;
@@ -251,10 +251,72 @@ body {
     border-radius: 2rem 2rem 2rem 2rem;
 }
 
+/* Trainings and exercises */
+
+.trainings-title {
+    gap: 1.4rem;
+    margin-left: 28rem;
+    margin-top: 10rem;
+    max-width: 67.1rem;
+}
+
+.trainings-title h1 {
+    font-size: 4.8rem;
+    font-weight: 900;
+}
+
+.trainings-title p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 0;
+}
+
+.training-img-container {
+    margin-top: 5.8rem;
+    margin-left: 28rem;
+    margin-right: 28rem;
+}
+
+.training-img-container img {
+    width: 100%;
+    height: 30rem;
+    filter: brightness(70%);
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.row-1,
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+}
+
+.row-2 {
+    grid-template-columns: 1.6fr 1fr 1.5fr;
+}
+
+.training-card {
+    position: relative;
+}
+
+.exercise {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 /* Meet Our Team */
 .team-members {
+    margin-top: 5.8rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     margin-left: 28rem;
     margin-right: 28rem;
     background-color: #424242a5;
@@ -271,13 +333,22 @@ body {
 
 .team-grid {
     position: relative;
-    margin-bottom: 2rem;
 }
+
+.team-grid::before {
+    content: "";
+    position: absolute;
+    width: 25rem;
+    height: 20rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
 
 .text-overlay {
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 1.5rem;
+    left: 1.9rem;
     text-align: left;
 }
 
@@ -306,7 +377,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15rem;
-    
+
 }
 
 .footer-1rst-container {
@@ -356,6 +427,7 @@ body {
     .nav-brand {
         margin-left: 2rem;
     }
+
     .common-p {
         max-width: 35rem;
     }
@@ -434,6 +506,38 @@ body {
         max-width: 28.7rem;
     }
 
+    .trainings-title {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .training-img-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        background-color: #424242a5;
+        border-radius: 2rem 2rem 2rem 2rem;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .training-img-container img {
+        width: 35rem;
+        height: 20rem;
+    }
+
+    .row-1,
+    .row-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .row-2 {
+        grid-template-columns: 1.6fr 1fr 1.5fr;
+    }
+
     .team-members {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 2rem;
@@ -445,7 +549,11 @@ body {
         width: 35rem;
         height: 35rem;
     }
-    
+
+    .team-grid::before {
+        width: 35rem;
+        height: 35rem;
+    }
 
     .footer-section {
         padding: 2rem;
