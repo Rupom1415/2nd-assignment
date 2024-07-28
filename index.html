@@ -19,16 +19,16 @@
                 </em></div>
             <ul class="nav-items display-flex">
                 <li class="home-btn">Home</li>
-                <li>Service</li>
-                <li>Contact</li>
-                <li>About</li>
+                <li class="nav-option">Service</li>
+                <li class="nav-option">Contact</li>
+                <li class="nav-option">About</li>
             </ul>
             <div class="ham-bars"><i class="fa-solid fa-bars"></i></div>
         </nav>
         <!-- hero -->
         <div class="hero-body">
             <div class="left-side-container display-flex">
-                <h1>Get body in shape & stay healthy</h1>
+                <h1>Get body in <span class="dancing-script-font">shape</span> & stay healthy</h1>
                 <p>Transform your body and boost your health with personalized workouts, nutrition plans, and progress
                     tracking. Achieve fitness goals effortlessly.</p>
                 <div class="buttons">
@@ -138,7 +138,7 @@
         <!-- BMI Calculator -->
          <section class="bmi-chart-container display-flex">
             <div class="chart-section">
-                <h1>BMI Calculator Chart</h1>
+                <h1 id="common-h1">BMI Calculator Chart</h1>
                 <table class="bmi-chart">
                     <thead>
                         <th>BMI</th>
@@ -165,19 +165,30 @@
                 </table>
             </div>
             <div class="calculator-section">
-                <h1>Calculate your BMI</h1>
+                <h1 id="common-h1">Calculate your BMI</h1>
                 <p>Quickly assess your body mass index (BMI) to understand your health status and fitness level.</p>
-                <div class="select-options">
-                    <input type="number" placeholder="Height/cm">
-                    <input type="number" placeholder="Weight/kg">
+                <div>
+                    <input type="number" placeholder="Height/cm" id="input-fill">
+                    <input type="number" placeholder="Weight/kg" id="input-fill">
                     <br>
-                    <input type="number" placeholder="Age">
-                    <select name="sex" id="sex">
+                    <input type="number" placeholder="Age" id="input-fill">
+                    <select name="sex" id="drop-down">
                         <option value="" disabled selected hidden>Sex</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="3rd Gender">3rd Gender</option>
+                        <option value="Male" style="color: black;">Male</option>
+                        <option value="Female" style="color: black;">Female</option>
+                        <option value="3rd Gender" style="color: black;">3rd Gender</option>
                     </select>
+                    <br>
+                    <select name="activity" id="activity">
+                        <option value="" disabled selected hidden>Select an activity factor</option>
+                        <option value="Sedentary" style="color: black;">Sedentary</option>
+                        <option value="Lightly" style="color: black;">Lightly active</option>
+                        <option value="Moderately" style="color: black;">Moderately active</option>
+                        <option value="Very" style="color: black;">Very active</option>
+                        <option value="Extremely" style="color: black;">Extremely active</option>
+                    </select>
+                    <br>
+                    <button class="btn btn-primary ex-btn" id="Calculate">Calculate</button>
                 </div>
             </div>
          </section>
@@ -261,7 +272,7 @@
                     <p>App Design</p>
                 </div>
             </div>
-            <hr style="width: 105.9rem; text-align: center; margin-top: 7.9rem; border: 0.1rem solid gray;">
+            <hr>
             <div class="copy-right">
                 <p>All right reserved @Fitness 2024</p>
             </div>
