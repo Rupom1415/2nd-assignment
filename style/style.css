@@ -314,8 +314,6 @@ body {
 .training-img-container img {
     width: 100%;
     height: 40.3rem;
-    /* width: 47rem;
-    height: 30rem; */
     filter: brightness(70%);
     object-fit: cover;
     
