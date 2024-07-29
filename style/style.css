@@ -769,7 +769,7 @@ hr {
     }
 
     .training-img-container img {
-        width: 35rem;
+        width: 33rem;
         height: 20rem;
         border-radius: 2rem;
     }
@@ -785,6 +785,7 @@ hr {
     }
 
     .row-2 {
+        margin-top: 1rem;
         grid-template-columns: 1.6fr 1fr 1.5fr;
     }
 
@@ -878,12 +879,12 @@ hr {
     }
 
     .common-img {
-        width: 35rem;
+        width: 33rem;
         height: 30rem;
     }
 
     .team-grid::before {
-        width: 35rem;
+        width: 33rem;
         height: 30rem;
     }
 
