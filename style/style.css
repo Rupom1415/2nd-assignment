@@ -44,13 +44,7 @@ body {
     max-width: 65rem;
 }
 
-.common-section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 8.8rem;
-}
+
 
 .btn-primary {
     color: white;
@@ -70,8 +64,11 @@ body {
 }
 
 .nav-container {
+    max-width: 1440px;
+    width: 100%;
     justify-content: space-between;
     margin-top: 5rem;
+    gap: 20rem;
 }
 
 .nav-items {
@@ -115,6 +112,8 @@ body {
 /* left-side style */
 
 .hero-body {
+    max-width: 1440px;
+    width: 100%;
     margin-top: 5rem;
     display: flex;
     justify-content: center;
@@ -127,7 +126,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2.8rem;
-    margin-left: 23rem;
 }
 
 .left-side-container h1 {
@@ -164,7 +162,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.right-side-content {
+.right-side-container {
     position: relative;
 }
 
@@ -208,13 +206,22 @@ body {
 }
 
 /* habit change */
+
+.habit-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 8.8rem;
+    max-width: 1440px;
+    width: 60%;
+}
+
 .habit-types {
     display: flex;
     flex-direction: row;
-    margin-left: 18rem;
-    margin-right: 18rem;
     margin-top: 8.8rem;
-    gap: 5rem;
+    gap: 10rem;
 }
 
 .type {
@@ -239,15 +246,14 @@ body {
 /* extra mile */
 
 .extra-mile-container {
+    max-width: 1440px;
     align-items: center;
     margin-top: 8.8rem;
-    margin-left: 28rem;
-    margin-right: 28rem;
     justify-content: space-between;
     background-color: #424242a5;
     border-radius: 2rem 2rem 2rem 2rem;
-    padding: 4rem 4rem 4rem 4rem;
-    gap: 5rem;
+    padding: 3.5rem 3.5rem;
+    gap: 16.5rem;
 }
 
 .extra-text {
@@ -270,19 +276,21 @@ body {
 }
 
 .extra-img img {
-    height: 31.2rem;
-    width: 36.6rem;
+    height: 41.2rem;
+    width: 46.6rem;
     object-fit: cover;
     border-radius: 2rem 2rem 2rem 2rem;
 }
 
 /* Trainings and exercises */
 
+.training-section {
+    max-width: 1440px;
+    margin-top: 8.8rem;
+}
+
 .trainings-title {
     gap: 1.4rem;
-    margin-left: 28rem;
-    margin-top: 10rem;
-    max-width: 67.1rem;
 }
 
 .trainings-title h1 {
@@ -299,27 +307,26 @@ body {
 
 .training-img-container {
     margin-top: 5.8rem;
-    margin-left: 28rem;
-    margin-right: 28rem;
 }
 
 .training-img-container img {
     width: 100%;
-    height: 30rem;
+    height: 40.3rem;
+    /* width: 47rem;
+    height: 30rem; */
     filter: brightness(70%);
     object-fit: cover;
-    border-radius: 1rem;
+    
 }
 
 .row-1,
 .row-2 {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1.2fr 2fr 1.5fr;
 }
 
 .row-2 {
-    grid-template-columns: 1.6fr 1fr 1.5fr;
+    grid-template-columns: 2fr 1fr 1fr;
 }
 
 .training-card {
@@ -340,8 +347,7 @@ body {
 .eating-plans-container {
     align-items: center;
     margin-top: 8.8rem;
-    margin-left: 28rem;
-    margin-right: 28rem;
+    max-width: 1440px;
     background-color: #424242a5;
     border-radius: 2rem 2rem 2rem 2rem;
     padding: 4rem 4rem 4rem 4rem;
@@ -356,7 +362,7 @@ body {
 }
 
 .diet-card {
-    width: 20rem;
+    width: 30rem;
     background-color: #353535;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
@@ -368,8 +374,8 @@ body {
 
 .diet-card img {
     border-radius: 50%;
-    height: 15rem;
-    width: 15rem;
+    height: 25rem;
+    width: 25rem;
     object-fit: cover;
 }
 
@@ -384,13 +390,13 @@ body {
 .diet-card h1 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
 .diet-card p {
     color: rgba(255, 255, 255, 0.50);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
 }
@@ -406,10 +412,18 @@ body {
 .bmi-chart-container {
     margin-top: 8.8rem;
     background-color: #424242a5;
-    width: 100%;
     height: 48.7rem;
     padding-right: 17rem;
     padding-left: 17rem;
+}
+
+.bmi-content {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.chart-section {
+    margin-top: 5.2rem;
 }
 
 .bmi-chart {
@@ -433,6 +447,10 @@ body {
     color: rgba(255, 255, 255, 0.50);
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+.calculator-section {
+    margin-top: 5.2rem;
 }
 
 .calculator-section p {
@@ -493,13 +511,22 @@ body {
 
 
 /* Meet Our Team */
+
+.our-team {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 8.8rem;
+    max-width: 1440px;
+    width: 60%;
+}
+
 .team-members {
     margin-top: 5.8rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-left: 28rem;
-    margin-right: 28rem;
     background-color: #424242a5;
     border-radius: 2rem 2rem 2rem 2rem;
     padding: 2rem 2rem 2rem 2rem;
@@ -507,8 +534,8 @@ body {
 
 .common-img {
     border-radius: 2rem 2rem 2rem 2rem;
-    width: 25rem;
-    height: 20rem;
+    width: 35rem;
+    height: 30rem;
     object-fit: cover;
 }
 
@@ -519,8 +546,8 @@ body {
 .team-grid::before {
     content: "";
     position: absolute;
-    width: 25rem;
-    height: 20rem;
+    width: 35rem;
+    height: 30rem;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 2rem 2rem 2rem 2rem;
 }
@@ -547,9 +574,14 @@ body {
 
 
 /* Footer section */
-.footer-section {
-    margin-top: 10rem;
+.footer-container {
     background-color: #424242a5;
+}
+
+.footer-content {
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 10rem;
     padding: 4rem 25rem 4rem 25rem;
     flex-direction: column;
 }
@@ -557,8 +589,7 @@ body {
 .footer-upper-section {
     display: flex;
     justify-content: center;
-    gap: 15rem;
-
+    gap: 10rem;
 }
 
 .footer-1rst-container {
@@ -573,7 +604,6 @@ body {
 }
 
 .footer-1rst-container p {
-    margin: 0;
     max-width: 40rem;
 }
 
@@ -606,7 +636,7 @@ body {
 }
 
 hr {
-    width: 105.9rem;
+    width: 93rem;
     text-align: center;
     margin-top: 7.9rem;
     border: 0.1rem solid gray;
@@ -682,12 +712,14 @@ hr {
         display: none;
     }
 
+    .habit-container {
+        width: 90%;
+    }
+
     .habit-types {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 0rem;
-        margin-right: 0rem;
         gap: 3rem;
     }
 
@@ -715,6 +747,12 @@ hr {
         max-width: 28.7rem;
     }
 
+    .training-section {
+        width: 90%;
+        margin-top: 8.8rem;
+  
+    }
+
     .trainings-title {
         margin-left: 2rem;
         margin-right: 2rem;
@@ -725,8 +763,6 @@ hr {
     }
 
     .training-img-container {
-        margin-left: 2rem;
-        margin-right: 2rem;
         background-color: #424242a5;
         border-radius: 2rem 2rem 2rem 2rem;
         padding: 2rem 2rem 2rem 2rem;
@@ -735,6 +771,7 @@ hr {
     .training-img-container img {
         width: 35rem;
         height: 20rem;
+        border-radius: 2rem;
     }
 
     .row-1,
@@ -769,36 +806,46 @@ hr {
     }
 
     .diet-card img {
-        height: 10rem;
-        width: 10rem;
+        height: 15rem;
+        width: 15rem;
     }
 
     .diet-detail {
         width: 10rem;
     }
- 
+
     .diet-card h1 {
+        font-size: 1.5rem;
         margin-left: 0;
         justify-content: left;
         text-align: left;
     }
 
     .diet-card p {
+        font-size: 1rem;
         width: 10rem;
         text-align: left;
     }
 
-    .bmi-chart-container {
+    .bmi-content {
         flex-direction: column;
+    }
+
+    .bmi-chart-container {
         height: 77.7rem;
         gap: 4.2rem;
         padding-right: 2rem;
         padding-left: 2rem;
     }
 
+    .chart-section {
+        margin-top: 3.4rem;
+    }
+
     .bmi-chart {
         margin-top: 2.3rem;
     }
+
     .calculator-section p {
         width: 34.6rem;
         margin-left: 0;
@@ -821,16 +868,18 @@ hr {
         margin-left: 2rem;
     }
 
+    .our-team {
+        width: 90%;
+    }
+
     .team-members {
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 2rem;
-        margin-right: 2rem;
         padding: 2rem;
     }
 
     .common-img {
         width: 35rem;
-        height: 35rem;
+        height: 30rem;
     }
 
     .team-grid::before {
@@ -838,8 +887,10 @@ hr {
         height: 35rem;
     }
 
-    .footer-section {
+    .footer-content {
         padding: 2rem;
+        margin-right: 0;
+        margin-right: 0;
     }
 
     .footer-upper-section {
