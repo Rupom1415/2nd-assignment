@@ -519,7 +519,7 @@ body {
     text-align: center;
     margin-top: 8.8rem;
     max-width: 1440px;
-    width: 60%;
+    width: 100%;
 }
 
 .team-members {
@@ -534,8 +534,8 @@ body {
 
 .common-img {
     border-radius: 2rem 2rem 2rem 2rem;
-    width: 35rem;
-    height: 30rem;
+    width: 45rem;
+    height: 40rem;
     object-fit: cover;
 }
 
@@ -546,8 +546,8 @@ body {
 .team-grid::before {
     content: "";
     position: absolute;
-    width: 35rem;
-    height: 30rem;
+    width: 45rem;
+    height: 40rem;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 2rem 2rem 2rem 2rem;
 }
@@ -884,7 +884,7 @@ hr {
 
     .team-grid::before {
         width: 35rem;
-        height: 35rem;
+        height: 30rem;
     }
 
     .footer-content {
