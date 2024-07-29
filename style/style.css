@@ -214,7 +214,7 @@ body {
     text-align: center;
     margin-top: 8.8rem;
     max-width: 1440px;
-    width: 60%;
+    width: 80%;
 }
 
 .habit-types {
@@ -235,12 +235,14 @@ body {
 }
 
 .type h3 {
+    margin-top: 1rem;
     font-size: 1.8rem;
 }
 
 .type p {
     font-size: 1.4rem;
     color: rgba(255, 255, 255, 0.50);
+    max-width: 20rem;
 }
 
 /* extra mile */
