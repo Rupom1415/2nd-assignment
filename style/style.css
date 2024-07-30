@@ -166,6 +166,11 @@ body {
     position: relative;
 }
 
+.hero-img {
+    height: 58rem;
+    width: 34.9rem;
+}
+
 .box p {
     font-size: 1rem;
     font-weight: 400;
@@ -213,14 +218,13 @@ body {
     align-items: center;
     text-align: center;
     margin-top: 8.8rem;
-    max-width: 1440px;
-    width: 80%;
+    width: 1060px;
 }
 
 .habit-types {
     display: flex;
     flex-direction: row;
-    margin-top: 8.8rem;
+    margin-top: 5rem;
     gap: 10rem;
 }
 
@@ -248,7 +252,7 @@ body {
 /* extra mile */
 
 .extra-mile-container {
-    max-width: 1440px;
+    width: 1060px;
     align-items: center;
     margin-top: 8.8rem;
     justify-content: space-between;
@@ -278,16 +282,17 @@ body {
 }
 
 .extra-img img {
-    height: 41.2rem;
-    width: 46.6rem;
-    object-fit: cover;
+    height: 31.2rem;
+    width: 36.6rem;
+    object-fit: none;
+    object-position: 66% 30%;
     border-radius: 2rem 2rem 2rem 2rem;
 }
 
 /* Trainings and exercises */
 
 .training-section {
-    max-width: 1440px;
+    max-width: 1060px;
     margin-top: 8.8rem;
 }
 
@@ -313,10 +318,10 @@ body {
 
 .training-img-container img {
     width: 100%;
-    height: 40.3rem;
+    height: 30.3rem;
     filter: brightness(70%);
     object-fit: cover;
-    
+
 }
 
 .row-1,
@@ -347,7 +352,7 @@ body {
 .eating-plans-container {
     align-items: center;
     margin-top: 8.8rem;
-    max-width: 1440px;
+    max-width: 1060px;
     background-color: #424242a5;
     border-radius: 2rem 2rem 2rem 2rem;
     padding: 4rem 4rem 4rem 4rem;
@@ -362,7 +367,7 @@ body {
 }
 
 .diet-card {
-    width: 30rem;
+    max-width: 25rem;
     background-color: #353535;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
@@ -374,8 +379,8 @@ body {
 
 .diet-card img {
     border-radius: 50%;
-    height: 25rem;
-    width: 25rem;
+    height: 15rem;
+    width: 15rem;
     object-fit: cover;
 }
 
@@ -418,8 +423,9 @@ body {
 }
 
 .bmi-content {
-    max-width: 1440px;
+    max-width: 1060px;
     width: 100%;
+    gap: 17.5rem;
 }
 
 .chart-section {
@@ -456,7 +462,7 @@ body {
 .calculator-section p {
     color: rgba(255, 255, 255, 0.50);
     font-size: 1.4rem;
-    width: 45rem;
+    max-width: 45rem;
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
 }
@@ -518,7 +524,7 @@ body {
     align-items: center;
     text-align: center;
     margin-top: 8.8rem;
-    max-width: 1440px;
+    max-width: 1060px;
     width: 100%;
 }
 
@@ -534,24 +540,15 @@ body {
 
 .common-img {
     border-radius: 2rem 2rem 2rem 2rem;
-    width: 45rem;
-    height: 40rem;
+    width: 32.6rem;
+    height: 27.2rem;
     object-fit: cover;
+    filter: brightness(70%);
 }
 
 .team-grid {
     position: relative;
 }
-
-.team-grid::before {
-    content: "";
-    position: absolute;
-    width: 45rem;
-    height: 40rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 2rem 2rem 2rem 2rem;
-}
-
 
 .text-overlay {
     position: absolute;
@@ -653,6 +650,10 @@ hr {
         font-weight: 600;
     }
 
+    .nav-container {
+        gap: 0rem;
+    }
+
     .nav-brand {
         margin-left: 2rem;
     }
@@ -693,6 +694,11 @@ hr {
         font-size: 5rem;
     }
 
+    .right-side-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     .blur-box-1 {
         top: 15rem;
         left: 20rem;
@@ -700,7 +706,7 @@ hr {
 
     .blur-box-2 {
         top: 35rem;
-        left: 0.5rem;
+        left: 1.2rem;
     }
 
     .ham-bars {
@@ -714,6 +720,7 @@ hr {
 
     .habit-container {
         width: 90%;
+        margin-top: 2rem;
     }
 
     .habit-types {
@@ -728,6 +735,7 @@ hr {
     }
 
     .extra-mile-container {
+        width: 90%;
         flex-direction: column;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -743,14 +751,14 @@ hr {
     }
 
     .extra-img img {
-        max-height: 17rem;
-        max-width: 28.7rem;
+        height: 17rem;
+        width: 28.7rem;
+        object-fit: cover;
     }
 
     .training-section {
         width: 90%;
         margin-top: 8.8rem;
-  
     }
 
     .trainings-title {
@@ -769,7 +777,7 @@ hr {
     }
 
     .training-img-container img {
-        width: 33rem;
+        width: 30rem;
         height: 20rem;
         border-radius: 2rem;
     }
@@ -799,11 +807,7 @@ hr {
     }
 
     .diet-card {
-        flex-direction: row;
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-        width: 30rem;
+        width: 100%;
     }
 
     .diet-card img {
@@ -811,25 +815,19 @@ hr {
         width: 15rem;
     }
 
-    .diet-detail {
-        width: 10rem;
-    }
-
     .diet-card h1 {
         font-size: 1.5rem;
         margin-left: 0;
-        justify-content: left;
-        text-align: left;
     }
 
     .diet-card p {
         font-size: 1rem;
-        width: 10rem;
         text-align: left;
     }
 
     .bmi-content {
         flex-direction: column;
+        gap: 0;
     }
 
     .bmi-chart-container {
@@ -841,14 +839,20 @@ hr {
 
     .chart-section {
         margin-top: 3.4rem;
+        width: 31rem;
+        margin-left: 2rem;
     }
 
     .bmi-chart {
         margin-top: 2.3rem;
     }
 
+    .calculator-section {
+        margin-left: 2rem;
+    }
+
     .calculator-section p {
-        width: 34.6rem;
+        width: 100%;
         margin-left: 0;
     }
 
@@ -863,12 +867,6 @@ hr {
     #activity {
         width: 34.5rem;
     }
-
-    .chart-section {
-        max-width: 31rem;
-        margin-left: 2rem;
-    }
-
     .our-team {
         width: 90%;
     }
@@ -879,13 +877,13 @@ hr {
     }
 
     .common-img {
-        width: 33rem;
+        width: 30rem;
         height: 30rem;
     }
 
     .team-grid::before {
-        width: 33rem;
-        height: 30rem;
+        width: 100%;
+        height: 100%;
     }
 
     .footer-content {
