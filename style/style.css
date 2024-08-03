@@ -59,10 +59,13 @@ body {
     color: white;
     background-color: rgb(255, 60, 0);
     border: none;
+    transition: all 0.40s;
 }
 
 .btn-primary:hover {
     background-color: #CC0000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    transform: scale(1.05);
 }
 
 
@@ -95,6 +98,8 @@ body {
 
 .nav-option:hover {
     color: rgb(255, 60, 0);
+    background-color: none;
+    text-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
 }
 
 .nav-brand {
@@ -164,11 +169,14 @@ body {
     color: white;
     border: 1px solid white;
     background-color: transparent;
+    transition: all 0.40s;
 }
 
 .btn-secondary:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    transform: scale(1.05);
 }
 
 .right-side-container {
@@ -212,10 +220,9 @@ body {
     min-width: 15rem;
 }
 
-.red-circle {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: rgb(255, 60, 0);
+.play-btn img {
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
 }
 
@@ -245,6 +252,12 @@ body {
 
 .type img {
     border-radius: 50%;
+    transition: all 0.40s;
+}
+
+.type img:hover {
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.7);
+    transform: scale(1.09);
 }
 
 .type h3 {
@@ -301,6 +314,12 @@ body {
     object-fit: none;
     object-position: 66% 30%;
     border-radius: 2rem 2rem 2rem 2rem;
+    transition: all 0.40s;
+}
+
+.extra-img img:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    transform: scale(1.05);
 }
 
 /* Trainings and exercises */
@@ -335,7 +354,11 @@ body {
     width: 100%;
     filter: brightness(70%);
     object-fit: cover;
-
+    transition: all 0.40s;
+}
+.training-card img:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+    transform: scale(1.05);
 }
 
 .row-1,
@@ -392,6 +415,13 @@ body {
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem 2rem 2rem 2rem;
+    transition: all 0.40s;
+}
+
+.diet-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.7);
 }
 
 .diet-card img {
@@ -423,6 +453,62 @@ body {
     text-align: center;
 }
 
+.diet-subs-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.mail-box {
+    height: 5.7rem;
+    max-width: 100%;
+    width: 45rem;
+    padding: 1.9rem 2rem 1.9rem 2rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background: rgb(255, 255, 255, 0.10);
+}
+
+.mail-box:hover {
+    background: rgba(255, 255, 255, 0.474);
+}
+
+.mail-box::placeholder {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.474);
+}
+
+.mail-box:hover::placeholder {
+    color: #000000;
+}
+
+.submit-btn {
+    width: 20rem;
+    height: 5.7rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.9rem 2rem 1.9rem 2rem;
+    margin: 0 1.6rem;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(255, 60, 0);
+    color: white;
+    cursor: pointer;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: all 0.40s;
+}
+
+.submit-btn:hover {
+    background-color: #CC0000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
 
 /* BMI Calculator*/
 #common-h1 {
@@ -448,6 +534,8 @@ body {
 .chart-section {
     margin-top: 5.2rem;
     width: 100%;
+    margin-left: 0;
+    margin-right: 2rem;
 }
 
 .bmi-chart {
@@ -503,10 +591,18 @@ body {
     margin-bottom: 0.5rem;
 }
 
+#input-fill:hover {
+    background: rgba(255, 255, 255, 0.474);
+}
+
 #input-fill::placeholder {
     color: rgba(255, 255, 255, 0.60);
     font-size: 1.6rem;
     font-weight: 400;
+}
+
+#input-fill:hover::placeholder {
+    color: #000000;
 }
 
 #drop-down {
@@ -523,6 +619,11 @@ body {
     font-weight: 400;
 }
 
+#drop-down:hover {
+    background: rgba(255, 255, 255, 0.474);
+    color: #000000;
+}
+
 #activity {
     cursor: pointer;
     height: 4.8rem;
@@ -536,6 +637,11 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 1.4rem;
+}
+
+#activity:hover {
+    background: rgba(255, 255, 255, 0.474);
+    color: #000000;
 }
 
 #Calculate {
@@ -573,6 +679,11 @@ body {
     height: 27.2rem;
     object-fit: cover;
     filter: brightness(70%);
+    transition: all 0.40s;
+}
+.common-img:hover {
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.7);
+    transform: scale(1.05);
 }
 
 .team-grid {
@@ -841,6 +952,9 @@ hr {
         width: 100%;
     }
 
+    .diet-card:hover {
+        transform: none;
+    }
 
     .diet-card h1 {
         font-size: 1.5rem;
@@ -850,6 +964,37 @@ hr {
     .diet-card p {
         font-size: 1rem;
         text-align: left;
+    }
+
+    .diet-subs-container {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    .mail-box {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .mail-box::placeholder {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.474);
+    }
+
+    .submit-btn {
+        margin-top: 2rem;
     }
 
     .bmi-content {
@@ -868,14 +1013,13 @@ hr {
 
     .chart-section {
         margin-top: 3.4rem;
-        margin-left: 0;
     }
 
     .bmi-chart {
         margin-top: 2.3rem;
     }
 
-    .calculator-section {    
+    .calculator-section {
         margin-top: 5.2rem;
         width: 100%;
     }
@@ -894,7 +1038,7 @@ hr {
 
     .our-team {
         width: 90%;
-    } 
+    }
 
     .team-members {
         grid-template-columns: repeat(1, 1fr);
