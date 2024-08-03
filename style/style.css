@@ -25,6 +25,15 @@ body {
     line-height: 1.5;
     color: aliceblue;
     background-color: black;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .display-flex {
@@ -253,6 +262,7 @@ body {
 
 .extra-mile-container {
     width: 1060px;
+    max-width: var(--max-width);
     align-items: center;
     margin-top: 8.8rem;
     justify-content: space-between;
@@ -260,6 +270,10 @@ body {
     border-radius: 2rem 2rem 2rem 2rem;
     padding: 3.5rem 3.5rem;
     gap: 16.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .extra-text {
@@ -316,9 +330,9 @@ body {
     margin-top: 5.8rem;
 }
 
-.training-img-container img {
+.training-card img {
+    height: 100%;
     width: 100%;
-    height: 30.3rem;
     filter: brightness(70%);
     object-fit: cover;
 
@@ -352,11 +366,14 @@ body {
 .eating-plans-container {
     align-items: center;
     margin-top: 8.8rem;
-    max-width: 1060px;
+    width: 1060px;
     background-color: #424242a5;
     border-radius: 2rem 2rem 2rem 2rem;
     padding: 4rem 4rem 4rem 4rem;
     flex-direction: column;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .diet-plans {
@@ -367,7 +384,7 @@ body {
 }
 
 .diet-card {
-    max-width: 25rem;
+    width: 50%;
     background-color: #353535;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
@@ -378,9 +395,9 @@ body {
 }
 
 .diet-card img {
-    border-radius: 50%;
-    height: 15rem;
-    width: 15rem;
+    border-radius: 2rem;
+    width: 100%;
+    height: 20rem;
     object-fit: cover;
 }
 
@@ -430,9 +447,11 @@ body {
 
 .chart-section {
     margin-top: 5.2rem;
+    width: 100%;
 }
 
 .bmi-chart {
+    margin-left: 0;
     margin-top: 5.2rem;
     border-collapse: collapse;
     text-align: left;
@@ -457,14 +476,19 @@ body {
 
 .calculator-section {
     margin-top: 5.2rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
 }
 
 .calculator-section p {
     color: rgba(255, 255, 255, 0.50);
     font-size: 1.4rem;
-    max-width: 45rem;
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
+    width: 90%;
+    margin-left: 0;
 }
 
 #input-fill {
@@ -473,6 +497,7 @@ body {
     border: none;
     background: rgb(255, 255, 255, 0.10);
     color: white;
+    max-width: 100%;
     width: 22.2rem;
     height: 4.8rem;
     margin-bottom: 0.5rem;
@@ -487,6 +512,7 @@ body {
 #drop-down {
     cursor: pointer;
     height: 4.8rem;
+    max-width: 100%;
     width: 22.2rem;
     padding: 1.2rem 4rem 1.2rem 2rem;
     border-radius: 0.8rem;
@@ -500,6 +526,7 @@ body {
 #activity {
     cursor: pointer;
     height: 4.8rem;
+    max-width: 100%;
     width: 45rem;
     padding: 1.2rem 4rem 1.2rem 2rem;
     border-radius: 0.8rem;
@@ -540,7 +567,9 @@ body {
 
 .common-img {
     border-radius: 2rem 2rem 2rem 2rem;
+    max-width: 100%;
     width: 32.6rem;
+    max-height: 100%;
     height: 27.2rem;
     object-fit: cover;
     filter: brightness(70%);
@@ -740,6 +769,8 @@ hr {
         margin-left: 2rem;
         margin-right: 2rem;
         gap: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .extra-text h1 {
@@ -751,8 +782,8 @@ hr {
     }
 
     .extra-img img {
-        height: 17rem;
-        width: 28.7rem;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
     }
 
@@ -777,8 +808,6 @@ hr {
     }
 
     .training-img-container img {
-        width: 30rem;
-        height: 20rem;
         border-radius: 2rem;
     }
 
@@ -798,8 +827,10 @@ hr {
     }
 
     .eating-plans-container {
+        width: 90%;
         margin-left: 2rem;
         margin-right: 2rem;
+        padding: 2rem;
     }
 
     .diet-plans {
@@ -810,10 +841,6 @@ hr {
         width: 100%;
     }
 
-    .diet-card img {
-        height: 15rem;
-        width: 15rem;
-    }
 
     .diet-card h1 {
         font-size: 1.5rem;
@@ -828,10 +855,12 @@ hr {
     .bmi-content {
         flex-direction: column;
         gap: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .bmi-chart-container {
-        height: 77.7rem;
+        height: 100%;
         gap: 4.2rem;
         padding-right: 2rem;
         padding-left: 2rem;
@@ -839,46 +868,37 @@ hr {
 
     .chart-section {
         margin-top: 3.4rem;
-        width: 31rem;
-        margin-left: 2rem;
+        margin-left: 0;
     }
 
     .bmi-chart {
         margin-top: 2.3rem;
     }
 
-    .calculator-section {
-        margin-left: 2rem;
-    }
-
-    .calculator-section p {
+    .calculator-section {    
+        margin-top: 5.2rem;
         width: 100%;
-        margin-left: 0;
     }
 
     #input-fill {
-        width: 17rem;
+        max-width: 40%;
     }
 
     #drop-down {
-        width: 17rem;
+        max-width: 40%;
     }
 
     #activity {
-        width: 34.5rem;
+        max-width: 81%;
     }
+
     .our-team {
         width: 90%;
-    }
+    } 
 
     .team-members {
         grid-template-columns: repeat(1, 1fr);
         padding: 2rem;
-    }
-
-    .common-img {
-        width: 30rem;
-        height: 30rem;
     }
 
     .team-grid::before {
