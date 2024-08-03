@@ -453,8 +453,20 @@ body {
     text-align: center;
 }
 
-.diet-subs-container {
+.sub-container {
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#Subscribe{
     margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.diet-subs-container {
+    margin-top: 2rem;
     display: flex;
     justify-items: center;
     align-items: center;
