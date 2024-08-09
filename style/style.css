@@ -53,8 +53,6 @@ body {
     max-width: 65rem;
 }
 
-
-
 .btn-primary {
     color: white;
     background-color: rgb(255, 60, 0);
@@ -167,6 +165,10 @@ body {
     font-size: 1.8rem;
     cursor: pointer;
     font-weight: 600;
+}
+
+.short-text {
+    display: none;
 }
 
 .btn-secondary {
@@ -817,6 +819,14 @@ hr {
     .hero-body {
         margin-top: 5.1rem;
         flex-direction: column;
+    }
+
+    .short-text {
+        display: inline-block;
+    }
+
+    .full-text {
+        display: none;
     }
 
     .buttons {
