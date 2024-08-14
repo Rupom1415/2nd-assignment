@@ -730,17 +730,17 @@ body {
 }
 
 .footer-content {
-    max-width: 1440px;
+    max-width: 1060px;
     width: 100%;
     margin-top: 10rem;
-    padding: 4rem 25rem 4rem 25rem;
     flex-direction: column;
 }
 
 .footer-upper-section {
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
-    gap: 10rem;
+    gap: 14rem;
 }
 
 .footer-1rst-container {
@@ -783,14 +783,14 @@ body {
     color: rgba(255, 255, 255, 0.50);
     font-size: 2rem;
     font-weight: 400;
-    margin-top: 3.6rem;
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
 }
 
 hr {
-    width: 93rem;
-    text-align: center;
+    width: 1060px;
     margin-top: 7.9rem;
-    border: 0.1rem solid gray;
+    border: 0.1rem solid rgb(255, 255, 255, 0.10);
 }
 
 @media screen and (max-width:576px) {
@@ -1093,6 +1093,6 @@ hr {
     }
 
     hr {
-        width: 35.4rem;
+        max-width: 100%;
     }
 }
